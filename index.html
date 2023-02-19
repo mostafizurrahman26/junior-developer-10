@@ -22,18 +22,28 @@
 </div>
 </div>
 </header>
-
-
-
-
-
+<!-- Area of main section side-->
 <main>
-<section>
+<section class="lg:flex gap-3 mx-auto w-full h-auto">
+   <div onmouseenter="mouseOverChangeColor()" id="card-all"   class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto md:w-3/4 gap-3 overflow-hidden p-3">
 
+<!--Area of triangle Card side-->
+<div  class="card w-full  py-8 px-3 h-auto">
+     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
+       <div class="card-body">
+        <h2 id="triangle-title" class="card-title mx-auto font-bold text-2xl">Triangle</h2>
+           <p class="text-center text-lg ">Area (A) = 0.5 x b x h</p>
+        <div class="flex items-center mx-auto">
+     <input id="triangle-base" type="text" placeholder="b" class="input w-16 max-w-xs bg-slate-200" />
+<p class="pl-1 pr-2">cm</p>
+<input id="triangle-height" type="text" placeholder="h" class="input w-16 max-w-xs bg-slate-200" />
+<p class="pl-1">cm</p>
+  </div>
+          <button id="triangle-btn" class="btn bg-slate-200 text-black w-full text-xl border-blue-500 normal-case ">Calculate</button>
+       </div>
+   </div>
+</div>
 </section>
-
-
-
 </main>
 
     <!--  file of javascript-->
